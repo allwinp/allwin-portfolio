@@ -1,0 +1,10 @@
+.ant-menu {
+  position: fixed;
+  width: 100%;
+  background: rgb(17 24 39) !important;
+  border: 0;
+}
+
+.name-logo:hover {
+  background: transparent !important;
+}

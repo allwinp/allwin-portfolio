@@ -1,0 +1,19 @@
+#projects-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+#projects-container {
+  margin: auto;
+  width: 65vw;
+  height: 65vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  margin: auto;
+  width: 30vw;
+  height: 30vh;
+}
