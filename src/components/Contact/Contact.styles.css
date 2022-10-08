@@ -1,0 +1,90 @@
+#embedmap-display {
+  margin: auto;
+  height: 70vh;
+  width: 70vw;
+  position: relative;
+  border-radius: 50px 50px 50px 50px;
+}
+
+#contact-items-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  border-radius: 10px 10px 10px 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+  font-weight: 500;
+}
+
+p {
+  color: gray;
+  font-size: 0.875rem; /* 30px */
+  line-height: 1.625;
+  font-weight: 500;
+}
+
+form div {
+  margin-top: 2vh;
+}
+label {
+  line-height: 1.75rem; /* 28px */
+  font-size: 1.25rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  color: rgb(156 163 175);
+}
+
+input {
+  margin-top: 0.5vh;
+  width: 100%;
+  height: 5vh;
+  background-color: rgb(31 41 55);
+  border: 1px solid #caaaf3;
+  border-radius: 10px 10px 10px 10px;
+  color: white;
+  padding-left: 2rem;
+}
+
+textarea {
+  margin-top: 0.5vh;
+  width: 100%;
+  height: 13vh;
+  background-color: rgb(31 41 55);
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid #caaaf3;
+  padding-left: 2rem;
+  padding-top: 0.75rem;
+  color: white;
+}
+
+button {
+  margin-top: 2vh;
+  width: 100%;
+  height: 5vh;
+  color: white;
+  background-color: #5046e5;
+  border: 1px solid gray;
+  padding-top: 2;
+  padding-left: 2rem;
+  border-radius: 3px 3px 3px 3px;
+  font-size: 1.25rem;
+}
