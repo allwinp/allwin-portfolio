@@ -1,16 +1,23 @@
+#contact-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+#contact-items-container {
+  margin: auto auto 5vh auto;
+  height: 70vh;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+}
+
 #embedmap-display {
   margin: auto;
   height: 70vh;
   width: 70vw;
   position: relative;
   border-radius: 50px 50px 50px 50px;
-}
-
-#contact-items-container {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  align-items: center;
 }
 
 iframe {
@@ -61,7 +68,7 @@ input {
   border: 1px solid #caaaf3;
   border-radius: 10px 10px 10px 10px;
   color: white;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 textarea {
@@ -71,7 +78,7 @@ textarea {
   background-color: rgb(31 41 55);
   border-radius: 10px 10px 10px 10px;
   border: 1px solid #caaaf3;
-  padding-left: 2rem;
+  padding-left: 1rem;
   padding-top: 0.75rem;
   color: white;
 }
@@ -83,8 +90,12 @@ button {
   color: white;
   background-color: #5046e5;
   border: 1px solid gray;
-  padding-top: 2;
-  padding-left: 2rem;
   border-radius: 3px 3px 3px 3px;
   font-size: 1.25rem;
+  cursor: pointer;
+  opacity: 90%;
+}
+
+button:hover {
+  opacity: 100%;
 }

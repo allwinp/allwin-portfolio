@@ -40,7 +40,7 @@ const Navbar = () => {
           Projects
         </Menu.Item>
         <Menu.Item key="alipay" icon={<BranchesOutlined />}>
-          Skills
+          Tech
         </Menu.Item>
         <Menu.Item style={{ marginLeft: "auto" }}>
           Contact
