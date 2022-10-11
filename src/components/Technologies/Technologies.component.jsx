@@ -7,7 +7,7 @@ const technologies = [
   "JavaScript",
   "React",
   "Node",
-  "Antd/MUI/Tailwind",
+  "Tailwind",
   "Next.js",
   "Python",
 ];
