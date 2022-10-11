@@ -67,7 +67,9 @@ export default function Contact() {
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
-          <button type="submit">Submit</button>
+          <button id="#contact-submit-button" type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </div>

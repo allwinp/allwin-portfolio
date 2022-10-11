@@ -10,7 +10,7 @@ const strings = [
 
 const About = () => {
   return (
-    <div className="typing-animation-text">
+    <div id="typing-animation-text">
       <Typing speed={10} loop={true} cursorClassName="typing-animation-cursor">
         {strings.map((x) => (
           <>

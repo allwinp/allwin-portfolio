@@ -1,7 +1,7 @@
 import React from "react";
 import "./Technologies.styles.css";
 
-import { BranchesOutlined, ApiTwoTone } from "@ant-design/icons";
+import { BranchesOutlined } from "@ant-design/icons";
 
 const technologies = [
   "JavaScript",
@@ -14,7 +14,7 @@ const technologies = [
 
 const Technologies = () => {
   return (
-    <div className="technologies-page">
+    <div id="technologies-page">
       <div className="technologies-info-container">
         <BranchesOutlined className="technologies-icon" />
         <h1>Technologies </h1>

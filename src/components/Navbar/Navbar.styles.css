@@ -3,8 +3,13 @@
   width: 100%;
   background: rgb(17 24 39) !important;
   border: 0;
+  padding-bottom: 0;
 }
 
+.name-logo {
+  font-size: 18px;
+  color: #caaaf3 !important;
+}
 .name-logo:hover {
   background: transparent !important;
 }

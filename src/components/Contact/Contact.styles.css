@@ -83,12 +83,12 @@ textarea {
   color: white;
 }
 
-button {
+#contact-submit-button {
   margin-top: 2vh;
   width: 100%;
   height: 5vh;
   color: white;
-  background-color: #5046e5;
+  background: #5046e5;
   border: 1px solid gray;
   border-radius: 3px 3px 3px 3px;
   font-size: 1.25rem;

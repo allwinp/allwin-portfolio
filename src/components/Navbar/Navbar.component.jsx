@@ -26,24 +26,24 @@ const Navbar = () => {
         mode="horizontal"
         theme="dark"
       >
-        <Menu.Item
-          className="name-logo"
-          style={{ fontSize: "18px", color: "#CAAAF3" }}
-          key="home"
-        >
+        <Menu.Item className="name-logo" key="home">
           Allwin Philip
         </Menu.Item>
+
         <Menu.Item key="mail" icon={<UserOutlined />}>
-          About
+          <a href="#typing-animation-text">About </a>
         </Menu.Item>
+
         <Menu.Item key="app" icon={<AppstoreOutlined />}>
-          Projects
+          <a href="/#projects-page">Projects </a>
         </Menu.Item>
+
         <Menu.Item key="alipay" icon={<BranchesOutlined />}>
-          Tech
+          <a href="#technologies-page"> Tech</a>
         </Menu.Item>
-        <Menu.Item style={{ marginLeft: "auto" }}>
-          Contact
+
+        <Menu.Item style={{ marginLeft: "auto" }} href="/contact-page">
+          <a href="/#contact-page">Contact </a>
           <ArrowRightOutlined style={{ marginLeft: "10px" }} />
         </Menu.Item>
       </Menu>
