@@ -26,8 +26,10 @@ const Navbar = () => {
         mode="horizontal"
         theme="dark"
       >
-        <Menu.Item className="name-logo" key="home">
-          Allwin Philip
+        <Menu.Item key="home">
+          <a className="name-logo" href="/">
+            Allwin Philip
+          </a>
         </Menu.Item>
 
         <Menu.Item key="mail" icon={<UserOutlined />}>
@@ -35,7 +37,7 @@ const Navbar = () => {
         </Menu.Item>
 
         <Menu.Item key="app" icon={<AppstoreOutlined />}>
-          <a href="/#projects-page">Projects </a>
+          <a href="#projects-page">Projects </a>
         </Menu.Item>
 
         <Menu.Item key="alipay" icon={<BranchesOutlined />}>
@@ -43,7 +45,7 @@ const Navbar = () => {
         </Menu.Item>
 
         <Menu.Item style={{ marginLeft: "auto" }} href="/contact-page">
-          <a href="/#contact-page">Contact </a>
+          <a href="#contact-page">Contact </a>
           <ArrowRightOutlined style={{ marginLeft: "10px" }} />
         </Menu.Item>
       </Menu>

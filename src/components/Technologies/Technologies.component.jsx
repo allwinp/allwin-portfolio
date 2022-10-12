@@ -7,9 +7,9 @@ const technologies = [
   "JavaScript",
   "React",
   "Node",
-  "Tailwind",
   "Next.js",
-  "Python",
+  "GraphQL",
+  "Tailwind",
 ];
 
 const Technologies = () => {
