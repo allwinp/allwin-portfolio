@@ -28,6 +28,7 @@ iframe {
 }
 
 form {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 20vw;
@@ -97,4 +98,23 @@ button {
 
 button:hover {
   opacity: 0.9;
+}
+
+.form-submitted-alert-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #f6ffed;
+  border: 1px solid #b7eb8f;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 4vh;
+  color: black;
+  font-size: 14px;
+  font-variant: tabular-nums;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

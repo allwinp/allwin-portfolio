@@ -5,6 +5,7 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   function encode(data) {
     return Object.keys(data)
@@ -21,7 +22,12 @@ export default function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
     })
-      .then(() => alert("Message sent!"))
+      .then(() => {
+        setFormSubmitted(true);
+        setTimeout(() => {
+          setFormSubmitted(false);
+        }, 2500);
+      })
       .catch((error) => alert(error));
   }
 
@@ -38,12 +44,14 @@ export default function Contact() {
         <form netlify name="contact" onSubmit={handleSubmit}>
           <h2>Contact Me</h2>
           <p>
-            Want to hire me? Want to chat? Want to know the secret to life?
+            Want to hire me? Want to chat? Searching for Blackbeard's lost
+            treasure?
             <br></br>I can help with the first two.
           </p>
           <div>
             <label htmlFor="name">Name</label>
             <input
+              required
               type="text"
               id="name"
               name="name"
@@ -53,6 +61,7 @@ export default function Contact() {
           <div>
             <label htmlFor="email">Email</label>
             <input
+              required
               type="email"
               id="email"
               name="email"
@@ -62,6 +71,7 @@ export default function Contact() {
           <div>
             <label htmlFor="message">Message</label>
             <textarea
+              required
               id="message"
               name="message"
               onChange={(e) => setMessage(e.target.value)}
@@ -70,6 +80,11 @@ export default function Contact() {
           <button id="#contact-submit-button" type="submit">
             Submit
           </button>
+          {formSubmitted && (
+            <div className="form-submitted-alert-container">
+              Your message has sent!
+            </div>
+          )}
         </form>
       </div>
     </div>
