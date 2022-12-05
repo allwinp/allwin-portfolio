@@ -42,7 +42,9 @@ export default function Contact() {
           ></iframe>
         </div>
         <form netlify name="contact" onSubmit={handleSubmit}>
-          <h2>Contact Me</h2>
+          <h2>
+            <span style={{ fontSize: "1.25em" }}>Contact Me</span>
+          </h2>
           <p>
             Want to hire me? Want to chat? Searching for Blackbeard's lost
             treasure?

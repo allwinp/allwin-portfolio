@@ -10,8 +10,19 @@ const Projects = () => {
       <AppstoreOutlined className="projects-icon" />
       <h1>Apps I've built </h1>
       <div id="projects-container">
-        {projectsData.map(({ name, url, description }) => (
-          <img alt={name} src={url} />
+        {projectsData.map(({ name, url, description, webaddress }) => (
+          <div className="img-container">
+            <img alt={name} src={url} />
+
+            <a href={webaddress} target="_blank" rel="noopener noreferrer">
+              <div className="hover-data">
+                <p className="description">
+                  <span className="title">{name}</span>
+                  {description}
+                </p>
+              </div>
+            </a>
+          </div>
         ))}
       </div>
     </div>

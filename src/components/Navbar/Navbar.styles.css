@@ -6,6 +6,7 @@
   background: rgb(17 24 39) !important;
   border: 0;
   padding-bottom: 0;
+  z-index: 200;
 }
 
 .name-logo {
