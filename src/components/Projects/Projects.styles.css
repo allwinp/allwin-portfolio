@@ -44,9 +44,15 @@
 }
 
 @media screen and (max-width: 700px) {
+  #projects-page {
+    height: fit-content;
+  }
   #projects-container {
+    height: fit-content;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5vh;
     margin: auto;
   }
 
