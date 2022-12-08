@@ -2,6 +2,7 @@
   height: 100vh;
   width: 100vw;
   display: flex;
+  flex-wrap: wrap;
 }
 
 #contact-items-container {
@@ -27,14 +28,29 @@ iframe {
   border-radius: 10px 10px 10px 10px;
 }
 
-form {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 20vw;
+@media screen and (min-width: 1025px) {
+  form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
 
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  #contact-items-container {
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+  }
+  #embedmap-display {
+    margin: auto;
+    position: relative;
+    border-radius: 50px 50px 50px 50px;
+  }
 }
 
 h2 {

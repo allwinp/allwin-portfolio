@@ -4,12 +4,12 @@ import "./Technologies.styles.css";
 import { BranchesOutlined } from "@ant-design/icons";
 
 const technologies = [
-  "JavaScript & TypeScript",
+  "JavaScript",
   "React",
-  "Node",
   "Next.js",
+  "TypeScript",
   "GraphQL",
-  "HTML & CSS",
+  "HTML/CSS",
 ];
 
 const Technologies = () => {

@@ -7,17 +7,13 @@
 }
 
 .technologies-container {
-  width: 1000px;
-
   margin-top: 0;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 25vw);
   gap: 10px;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .technologies-info-container {
@@ -27,8 +23,8 @@
 }
 
 .technology {
-  width: 490px;
-  height: 60px;
+  width: 25vw;
+  height: 7vh;
   background: #1f2937;
   border-radius: 5px;
   border: 1px solid #caaaf3;
@@ -61,4 +57,28 @@
   font-size: x-large;
   margin-left: 10px;
   color: mediumaquamarine;
+}
+
+@media screen and (max-width: 700px) {
+  .technologies-container {
+    margin-top: 0;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    gap: 10px;
+  }
+  .technology {
+    width: 30vw;
+    height: 7vh;
+    background: #1f2937;
+    border-radius: 5px;
+    border: 1px solid #caaaf3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+  }
 }
