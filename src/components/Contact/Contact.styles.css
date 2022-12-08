@@ -1,12 +1,14 @@
 #contact-page {
   height: 100vh;
   width: 100vw;
+  padding-bottom: 5vh;
+
   display: flex;
   flex-wrap: wrap;
 }
 
 #contact-items-container {
-  margin: auto auto 5vh auto;
+  margin: auto auto 0 auto;
   height: 70vh;
   width: 100vw;
   align-items: center;
@@ -45,9 +47,15 @@ iframe {
     height: 100vh;
     width: 100%;
     flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 5vh;
   }
   #embedmap-display {
     margin: auto;
+
     position: relative;
     border-radius: 50px 50px 50px 50px;
   }
