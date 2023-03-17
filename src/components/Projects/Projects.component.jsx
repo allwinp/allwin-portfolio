@@ -12,7 +12,7 @@ const Projects = () => {
       <div id="projects-container">
         {projectsData.map(({ name, url, description, webaddress }) => (
           <div className="img-container">
-            <img alt={name} src={url} />
+            <img alt={name} src={url} loading="lazy" />
 
             <a href={webaddress} target="_blank" rel="noopener noreferrer">
               <div className="hover-data">
