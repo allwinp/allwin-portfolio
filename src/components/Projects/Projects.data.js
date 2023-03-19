@@ -8,7 +8,7 @@ export const projectsData = [
   },
   {
     name: "AImages",
-    url: "AImages.gif",
+    url: "AImages.webp",
     description:
       "Full MERN stack application using OpenAI's DALL-E to create and share AI generated images",
     webaddress: "https://aimages.vercel.app",
